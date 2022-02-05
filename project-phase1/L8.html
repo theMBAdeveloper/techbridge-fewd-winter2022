@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Bookstore</title>
+</head>
+<h1>Rare Bookstores</h1>
+<body>
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Location')">Location</button>
+    <button class="tablinks" onclick="openInventory(event, 'Inventory')">Inventory</button>
+    <button class="tablinks" onclick="openMonth(event, 'Month')">Month</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Location" class="tabcontent">
+    <h3>Location</h3>
+    <p>Below is the location report.</p>
+  </div>
+  
+  <div id="Inventory" class="tabcontent">
+    <h3>Inventory Report</h3>
+    <p>Below is the inventory report.</p>
+  </div>
+  
+  <div id="Month" class="tabcontent">
+    <h3>Monthly Report</h3>
+    <p>Below is the monthly report.</p>
+  </div>
+  <div id="print-content">
+    <form>
+   
+     <input type="button" onclick="printDiv('print-content')" value="Print!"/>
+   </form>
+   </div>
+</body>
+</html>
