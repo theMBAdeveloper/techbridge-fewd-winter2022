@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList</title>
+</head>
+<link rel="stylesheet" href="Login.css">
+
+<script src="./booklist.js" defer></script>
+<body>
+    <h1 style="text-align:center;">Rare Bookstore Inventory</h1>
+    <p><b>Search By (required):</b></p>
+    <form>
+        <input type="radio" id="authorRadio" name="filter"><label for="author">Author</label>
+        <input type="radio" id="titleRadio" name="filter"><label for="title">Title</label>
+        <input type="radio" id="priceRadio" name="filter"><label for="price">Price</label>
+    </form>
+    <p><b>Sort By:</b></p>
+    <form >
+        <input name="order" id="ascending" type="radio"><label for="ascending">Asc</label>
+        <input name="order" id="descending" type="radio"><label for="descending">Desc</label>
+
+    </form>
+    <input type="text" id="myInput"  placeholder="Search for books..">
+
+
+      <!-- div*9.book>p*3 -->
+
+    <table id="myTable">
+        
+      <tr class="header">
+        <th style="width:60%;">Author's Name</th>
+        <th style="width:40%;">Book Title</th>
+        <th style="width:40%;">Price</th>
+      </tr>
+      <tr class="book">
+        <td>Joe Bradford</td>
+        <td>Financial Markets</td>
+        <td>$15.99</td>
+      </tr>
+      <tr class="book">
+        <td>Alex Smith</td>
+        <td>The Great Way</td>
+        <td>$21.99</td>
+      </tr>
+      <tr class="book">
+        <td>Yaser Khan</td>
+        <td>Option Trading</td>
+        <td>$32.75</td>
+      </tr>
+      <tr class="book">
+        <td>Matt Stanford</td>
+        <td>A Journey Through Time</td>
+        <td>$12.99</td>
+      </tr>
+      <tr class="book">
+        <td>Malik Hammad</td>
+        <td>Product Management Essentials</td>
+        <td>$17.99</td>
+      </tr>
+      <tr class="book">
+        <td>Ali Rodriguez</td>
+        <td>A Guide to Investing</td>
+        <td>$19.99</td>
+      </tr>
+      <tr class="book">
+        <td>Cooper Jefferson</td>
+        <td>Football Simplified</td>
+        <td>$15.99</td>
+       </tr>
+    <tr class="book">
+        <td>John Stanley</td>
+        <td>Forest Adventures</td>
+        <td>$13.99</td>
+        </tr>
+        <tr class="book">
+            <td>Will Jeffries</td>
+            <td>A Guide for Runners</td>
+            <td>$19.99</td>
+        </tr>
+    </table>
+
+</body>
+</html>
